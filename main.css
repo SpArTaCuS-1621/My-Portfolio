@@ -1,0 +1,223 @@
+/* INDEX.HTML STYLING */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	/*background: rgba(0, 255, 0, .3)*/
+}
+/*GLOBAL TYLING*/
+main a{
+	color: darkgray;
+	border: 1px solid  #d404c2; 
+	padding: 10px;
+	border-radius: 7px;
+	transition: all .3s;
+}
+main a:hover{
+	color: white;
+	background: #d404c2;
+}
+/*HEADER STYLES*/
+body{
+	color: #fff;
+	background: #111;
+}
+
+.name{
+	display: flex;
+	justify-content: space-between;
+	background-color: #333;
+}
+
+header .name img{
+	padding: 5px 0 10px 5px;
+	border-radius: 50%;
+}
+
+header .name h1{
+	margin: 7px 0 0 60px;
+	text-decoration: underline;
+}
+
+header .name ul{
+	display: flex;
+	margin: 15px 30px 10px 0;
+}
+
+header .name li{
+	padding: 7px;
+}
+
+header .name a{
+	color: #fff;
+	transition: 0.2s;
+}
+
+header .name a:hover{
+	color: #111;
+}
+
+header .name .logedin{
+	color: #0ce0f7;
+}
+/*MAIN STYLES*/
+.bg{
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -100000;
+	filter: blur()
+}
+
+main .container1{
+	text-align: center;
+	max-width: 380px;
+	float: left;
+	position: absolute;
+	top: 25%;
+	left: 5%;
+	z-index: 1;
+	border-left: 3px solid #d404c2;
+}
+
+.dani1{
+	position: relative;
+	top: 40px;
+	left: 35%;
+	padding-top: 30px;
+	z-index: -10;
+}
+.hello{
+	text-decoration: underline;
+}
+
+.note{
+	max-width: 300px;
+	float: right;
+	margin-top: 260px; 
+	padding-left: 20px;
+	border-left: 3px solid #d404c2;
+	padding-right: 15px;
+	text-align: left;
+	z-index: 1;
+	line-padding: 11px;
+	margin-bottom: 30px;
+}
+
+.note h2{
+	text-decoration: underline;
+}
+/*FOOTER STYLES*/
+footer{
+	position: relative;
+}
+
+.fot{
+	background-color: #333;
+	height: fit-content;
+}
+
+footer img{
+	padding: 10px 0 0 20px;
+}
+
+footer .foot{
+	float: right;
+	padding: 30px;
+}
+
+footer h3{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 37%;
+}
+
+footer .fa-brands{
+	padding: 10px;
+	color: #d404c2; 
+	margin: 20px;
+}
+/*MEDIA QUERIES*/
+
+@media (max-width: 920px) {
+	.note{
+		color: #fff;
+		z-index: 10;
+	}
+}
+
+@media (max-width: 700px) {
+	header img{
+		display: none;
+	}
+	header .name{
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+	}
+	header ul{
+		position: relative;
+		top: ;
+		left: 45%;
+		width: fit-content;
+	}
+	main .container1{
+		text-align: left;
+		max-width: 380px;
+		float: none;
+		padding-left: 10px;
+		position: absolute;
+		top: 20%;
+		left: 1%;
+	}
+	.dani1{
+		position: relative;
+		left: 5%;
+	}
+	.note{
+		max-width: 300px;
+		float: left;
+		margin-top: 300px;
+		margin-left: 5px; 
+		padding-left: 10px;
+		border-left: 3px solid #d404c2;
+		padding-right: 0;
+		text-align: left;
+		z-index: 10;
+	}
+	footer .fa-brands{
+		color: #d404c2; 
+		margin: 5px;
+	}
+}
+
+@media (max-width: 663px) {
+	.dani1{
+		display: none;
+	}
+	.note{
+		float: right;
+		margin-right: 10px; 
+	}
+	footer{
+		clear: both;
+	}
+	footer h3{
+		padding-left: 80px;
+	}
+	footer .foot{
+		float: left;
+	}
+}
+
+/* ABOUT.HTML STYLING*/
+main .container11{
+	text-align: center;
+	max-width: 100%;
+	margin: 20px 0 30px 30px;
+	border-left: 3px solid #d404c2;
+}
